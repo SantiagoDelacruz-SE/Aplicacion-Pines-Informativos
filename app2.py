@@ -600,17 +600,17 @@ with tab_dash:
         st_folium(m, width="100%", height=480)
         
         st.markdown("---")
-        c_d1, c_d2 = st.columns([1, 2])
-        with c_d1:
-            excel_data = generar_excel_estadisticas(df_actividades)
-            st.download_button(
-                label="📊 Descargar Actividades en Excel (.xlsx)",
-                data=excel_data,
-                file_name=f"Actividades_Observatorio_{datetime.now().strftime('%Y%m%d_%H%M')}.xlsx",
-                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-            )
-        with c_d2:
-            st.caption("Libro consolidado con la matriz completa y hoja de resumen por municipio, compatible con Google Sheets.")
+        # c_d1, c_d2 = st.columns([1, 2])
+        # with c_d1:
+        #     excel_data = generar_excel_estadisticas(df_actividades)
+        #     st.download_button(
+        #         label="📊 Descargar Actividades en Excel (.xlsx)",
+        #         data=excel_data,
+        #         file_name=f"Actividades_Observatorio_{datetime.now().strftime('%Y%m%d_%H%M')}.xlsx",
+        #         mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        #     )
+        # with c_d2:
+        #     st.caption("Libro consolidado con la matriz completa y hoja de resumen por municipio, compatible con Google Sheets.")
 
 # =============================================================
 # 2. MURAL DE EVIDENCIAS FOTOGRÁFICAS
